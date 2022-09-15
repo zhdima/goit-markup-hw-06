@@ -462,18 +462,19 @@ img {
 
 .footer > .container {
   display: flex;
-  gap: 70px;
 }
 
 .footer-contacts {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: 70px;
   min-width: 231px;
 }
 
 .footer-socials {
   padding-top: 72px;
   padding-bottom: 100px;
+  margin-right: 93px;
 }
 
 .footer-form {
