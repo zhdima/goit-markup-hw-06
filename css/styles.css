@@ -457,6 +457,8 @@ img {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--inverse-bg-color);
 }
 
@@ -465,21 +467,17 @@ img {
 }
 
 .footer-contacts {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-right: 70px;
   min-width: 231px;
 }
 
 .footer-socials {
-  padding-top: 72px;
-  padding-bottom: 100px;
-  margin-right: 93px;
+  padding-top: 12px;
 }
 
 .footer-form {
-  padding-top: 72px;
-  padding-bottom: 94px;
+  padding-top: 12px;
+  margin-left: auto;
 }
 
 .address {
@@ -694,14 +692,10 @@ img {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-
-  /* display: flex;
-  flex-direction: column; */
 
   background: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -756,8 +750,10 @@ img {
 }
 
 .regform-field {
-  position: relative;
   display: block;
+}
+
+.regform-field:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -767,6 +763,11 @@ img {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+}
+
+.regform-input-wrap {
+  position: relative;
+  display: block;
 }
 
 .regform-input {
@@ -785,8 +786,9 @@ img {
 
 .regform-icon {
   position: absolute;
-  bottom: 11px;
+  top: 50%;
   left: 12px;
+  transform: translateY(-50%);
   transition: fill var(--transition-method);
 }
 
@@ -805,10 +807,6 @@ img {
 
 .regform-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}
-
-.regform-field:last-child {
-  margin-bottom: 0;
 }
 
 .regform-input:invalid:not(:placeholder-shown):not(:focus) {
