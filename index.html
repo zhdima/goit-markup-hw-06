@@ -65,7 +65,7 @@
       <section class="hero">
         <div class="overlay">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="main-btn hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Переваги -->
@@ -581,6 +581,18 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <p class="footer-form-title">Підпишіться на розсилку</p>
+          <form class="signform" name="signform" autocomplete="off">
+            <input type="email" class="signform-input" name="signform-email" placeholder="E-mail" />
+            <button class="main-btn signform-btn" type="submit">
+              <span>Підписатися</span>
+              <svg class="signform-icon" width="24" height="24">
+                <use href="./images/icons.svg#form-sign-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -592,6 +604,73 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form class="regform" name="regform" autocomplete="off">
+          <strong class="regform-title">Залиште свої дані, ми вам передзвонимо</strong>
+          <div class="regform-group" role="group">
+            <label class="regform-field">
+              <span class="regform-label">Ім'я</span>
+              <input
+                type="text"
+                class="regform-input"
+                name="regform-name"
+                placeholder="&nbsp;"
+                minlength="3"
+                required
+              />
+              <svg class="regform-icon" width="18" height="18">
+                <use href="./images/icons.svg#form-person"></use>
+              </svg>
+            </label>
+            <label class="regform-field">
+              <span class="regform-label">Телефон</span>
+              <input
+                type="tel"
+                class="regform-input"
+                name="regform-tel"
+                placeholder="&nbsp;"
+                required
+              />
+              <svg class="regform-icon" width="18" height="18">
+                <use href="./images/icons.svg#form-phone"></use>
+              </svg>
+            </label>
+            <label class="regform-field">
+              <span class="regform-label">Пошта</span>
+              <input
+                type="email"
+                class="regform-input"
+                name="regform-email"
+                placeholder="&nbsp;"
+                required
+              />
+              <svg class="regform-icon" width="18" height="18">
+                <use href="./images/icons.svg#form-email"></use>
+              </svg>
+            </label>
+            <label class="regform-field">
+              <span class="regform-label">Коментар</span>
+              <textarea
+                class="regform-input regform-comment"
+                name="regform-comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+          <label class="regform-agreement">
+            <input type="checkbox" class="regform-check visually-hidden" name="regform-check" />
+            <svg class="regform-check-icon" width="16" height="15">
+              <use class="regform-icon-unchecked" href="./images/icons.svg#form-unchecked"></use>
+              <use class="regform-icon-checked" href="./images/icons.svg#form-checked"></use>
+            </svg>
+            <span class="regform-check-label"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="regform-check-link" href="" target="_blank" rel="noopener noreferrer"
+                >Умови договору</a
+              >
+            </span>
+          </label>
+          <button class="main-btn regform-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
 
